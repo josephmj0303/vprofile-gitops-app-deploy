@@ -54,6 +54,9 @@ Code Push → GitHub Actions → Test → SonarCloud Scan → Docker Build → P
 ```
 vprofile-gitops-app-deploy/
 │
+├── architecture/
+│   └── vprofile_gitops_architecture.png
+│
 ├── src/
 ├── Dockerfile
 ├── pom.xml
@@ -67,6 +70,9 @@ vprofile-gitops-app-deploy/
 ├── .github/
 │   └── workflows/
 │        ├── main.yml
+│
+├── screenshots/
+│   └── vprofile_action_deploy.png
 │
 └── README.md
 ```
