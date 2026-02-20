@@ -1,6 +1,4 @@
 # VProfile GitOps Application Deployment Repository (vprofile-gitops-app-deploy)
-## 🔁 CI/CD & Deployment Status
-
 ![Maven Build](https://img.shields.io/badge/Maven-Build-blue?logo=apachemaven)
 ![SonarCloud](https://img.shields.io/badge/SonarCloud-Code_Quality-orange?logo=sonarcloud)
 ![Amazon ECR](https://img.shields.io/badge/Amazon_ECR-Container_Registry-ff9900?logo=amazonaws)
@@ -53,7 +51,11 @@ Code Push → GitHub Actions → Test → SonarCloud Scan → Docker Build → P
 - SonarCloud
 
 ---
+## 🏗 Architecture Overview
 
+![GitOps Architecture](architecture/vprofile_gitops_architecture.png)
+
+---
 ## Repository Structure
 
 ```
@@ -77,6 +79,8 @@ vprofile-gitops-app-deploy/
 │        ├── main.yml
 │
 ├── screenshots/
+│   ├── cache-miss.png
+│   ├── cache-hit.png
 │   └── vprofile_action_deploy.png
 │
 └── README.md
@@ -134,24 +138,24 @@ helm upgrade --install
 ## Deployment Instructions
 
 ### Step 1: Clone Repository
-
+```
 git clone https://github.com/josephmj0303/vprofile-gitops-app-deploy.git
 
 cd vprofile-gitops-app-deploy
-
+```
 ---
 
 ### Step 2: Configure GitHub Secrets
 
 Required secrets:
 
-AWS_ACCESS_KEY_ID
-AWS_SECRET_ACCESS_KEY
-REGISTRY
-SONAR_TOKEN
-SONAR_URL
-SONAR_ORGANIZATION
-SONAR_PROJECT_KEY
+* AWS_ACCESS_KEY_ID
+* AWS_SECRET_ACCESS_KEY
+* REGISTRY
+* SONAR_TOKEN
+* SONAR_URL
+* SONAR_ORGANIZATION
+* SONAR_PROJECT_KEY
 
 ---
 
@@ -183,14 +187,6 @@ Managed using Helm charts.
 
 ---
 
-## Application Access
-
-After deployment:
-
-http://vprofile.joedevopslab.xyz
-
----
-
 ## Cache Architecture
 
 Application uses Memcached for caching.
@@ -210,6 +206,20 @@ Benefits:
 - Faster response
 - Reduced database load
 - Improved performance
+
+---
+
+
+## Screenshots
+
+### Pipeline Success
+![Pipeline Success](screenshots/vprofile_action_deploy.png)
+
+### Cache Miss
+![Cache Miss](screenshots/cache_miss.png)
+
+### Cache Hit
+![Cache Hit](screenshots/cache_hit.png)
 
 ---
 
