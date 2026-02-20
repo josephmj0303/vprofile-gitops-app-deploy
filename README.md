@@ -1,5 +1,10 @@
 # VProfile GitOps Application Deployment Repository (vprofile-gitops-app-deploy)
+## 🔁 CI/CD & Deployment Status
 
+![Maven Build](https://img.shields.io/badge/Maven-Build-blue?logo=apachemaven)
+![SonarCloud](https://img.shields.io/badge/SonarCloud-Code_Quality-orange?logo=sonarcloud)
+![Amazon ECR](https://img.shields.io/badge/Amazon_ECR-Container_Registry-ff9900?logo=amazonaws)
+![Helm](https://img.shields.io/badge/Helm-Kubernetes_Deployment-0f1689?logo=helm)
 ## Parent GitOps Project
 
 This repository is part of the GitOps platform:
