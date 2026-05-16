@@ -213,7 +213,7 @@ Benefits:
 ## Screenshots
 
 ### Pipeline Success
-![Pipeline Success](screenshots/vprofile_action_deploy.png)
+![Pipeline Success](screenshots/github-actions-success.png)
 
 ### Cache Miss
 ![Cache Miss](screenshots/cache_miss.png)
