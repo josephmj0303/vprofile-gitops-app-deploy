@@ -9,7 +9,7 @@ This repository is part of the GitOps platform:
 
 https://github.com/josephmj0303/vprofile-gitops-eks-platform
 
-## Overview
+## 📌 Overview
 
 This repository manages the CI/CD pipeline and Kubernetes deployment of the VProfile application using GitHub Actions, Docker, Helm, and Amazon EKS.
 
@@ -17,7 +17,7 @@ This repository follows GitOps principles where application deployment is fully 
 
 ---
 
-## Purpose
+## 🎯 Purpose
 
 This repository performs:
 
@@ -29,7 +29,7 @@ This repository performs:
 
 ---
 
-## GitOps Deployment Workflow
+## 🔄 GitOps Deployment Workflow
 
 Deployment flow:
 
@@ -38,7 +38,7 @@ Code Push → GitHub Actions → Test → SonarCloud Scan → Docker Build → P
 
 ---
 
-## Technology Stack
+## ⚙️ Technology Stack
 
 - Java
 - Maven
@@ -56,7 +56,7 @@ Code Push → GitHub Actions → Test → SonarCloud Scan → Docker Build → P
 ![GitOps Architecture](architecture/vprofile_gitops_architecture.png)
 
 ---
-## Repository Structure
+## 📂 Repository Structure
 
 ```
 vprofile-gitops-app-deploy/
@@ -88,7 +88,7 @@ vprofile-gitops-app-deploy/
 
 ---
 
-## CI/CD Pipeline Stages
+## 🧪 CI/CD Pipeline Stages
 
 ### Stage 1: Testing
 
@@ -135,7 +135,7 @@ helm upgrade --install
 
 ---
 
-## Deployment Instructions
+## 🧠 Deployment Instructions
 
 ### Step 1: Clone Repository
 ```
@@ -175,7 +175,7 @@ Pipeline will:
 
 ---
 
-## Kubernetes Components Deployed
+## 📦 Kubernetes Components Deployed
 
 - Deployment
 - Service
@@ -187,7 +187,7 @@ Managed using Helm charts.
 
 ---
 
-## Cache Architecture
+## 📊 Cache Architecture
 
 Application uses Memcached for caching.
 
@@ -210,7 +210,7 @@ Benefits:
 ---
 
 
-## Screenshots
+## 📸 Screenshots
 
 ### Pipeline Success
 ![Pipeline Success](screenshots/github-actions-success.png)
@@ -223,7 +223,7 @@ Benefits:
 
 ---
 
-## Benefits
+## 🧠 Benefits
 
 - Fully automated CI/CD
 - Immutable deployments
@@ -233,7 +233,7 @@ Benefits:
 
 ---
 
-## Future Improvements
+## 📈 Future Improvements
 
 Recommended improvements:
 
@@ -246,7 +246,7 @@ Recommended improvements:
 
 ---
 
-## Skills Demonstrated
+## S🚀 kills Demonstrated
 
 - Kubernetes
 - Docker
