@@ -3,6 +3,33 @@
 ![SonarCloud](https://img.shields.io/badge/SonarCloud-Code_Quality-orange?logo=sonarcloud)
 ![Amazon ECR](https://img.shields.io/badge/Amazon_ECR-Container_Registry-ff9900?logo=amazonaws)
 ![Helm](https://img.shields.io/badge/Helm-Kubernetes_Deployment-0f1689?logo=helm)
+
+ ## 🚀 Notice
+
+Project Evolution Notice
+
+This repository represents the original implementation of the VProfile deployment platform.
+
+A newer production-grade GitOps version is now available:
+
+→ https://github.com/josephmj0303/vprofile-app
+
+→ https://github.com/josephmj0303/vprofile-gitops
+
+→ https://github.com/josephmj0303/vprofile-gitops-infra
+
+The newer version introduces:
+
+- ArgoCD GitOps workflow
+- Automated Sync & Self-Healing
+- AWS Load Balancer Controller
+- IRSA (IAM Roles for Service Accounts)
+- Slack Deployment Notifications
+- Enhanced CI/CD automation
+
+Please refer to the upgraded project for the latest implementation.
+
+---
 ## Parent GitOps Project
 
 This repository is part of the GitOps platform:
